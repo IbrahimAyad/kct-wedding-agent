@@ -58,4 +58,8 @@ export async function POST(req: NextRequest) {
     console.error('❌ Wedding Agent error:', err);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });
   }
+}
+
+export async function GET() {
+  return NextResponse.json({ message: "Wedding Agent API is live!" });
 } 
